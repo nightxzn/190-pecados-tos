@@ -1,173 +1,197 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Termos de Serviço • 190 PECADOS</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>190 PECADOS • Termos de Serviço</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Fonte -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    :root {
-      --bg: #0b0614;
-      --card: #140a24;
-      --purple: #8b5cf6;
-      --purple-dark: #6d28d9;
-      --text: #e5e7eb;
-      --muted: #a1a1aa;
-    }
+<style>
+:root {
+  --bg: #0b0614;
+  --card: #140a24;
+  --purple: #8b5cf6;
+  --purple-dark: #6d28d9;
+  --text: #e5e7eb;
+  --muted: #a1a1aa;
+}
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: radial-gradient(circle at top, #1a0f2e, var(--bg));
-      color: var(--text);
-      min-height: 100vh;
-      padding: 40px 20px;
-    }
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #1a0f2e, var(--bg));
+  color: var(--text);
+  min-height: 100vh;
+  padding: 50px 20px;
+}
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      background: var(--card);
-      border-radius: 16px;
-      padding: 40px;
-      box-shadow: 0 0 40px rgba(139, 92, 246, 0.15);
-      animation: fadeIn 1s ease;
-    }
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: linear-gradient(145deg, #160a2a, #10061f);
+  border-radius: 18px;
+  padding: 45px;
+  box-shadow: 0 0 60px rgba(139,92,246,0.25);
+  animation: fadeUp 1s ease;
+}
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
-    h1 {
-      text-align: center;
-      color: var(--purple);
-      margin-bottom: 10px;
-      font-weight: 600;
-    }
+header {
+  text-align: center;
+  margin-bottom: 35px;
+}
 
-    .subtitle {
-      text-align: center;
-      color: var(--muted);
-      margin-bottom: 30px;
-      font-size: 14px;
-    }
+header h1 {
+  font-size: 36px;
+  color: var(--purple);
+  text-shadow: 0 0 15px rgba(139,92,246,0.5);
+}
 
-    h2 {
-      color: var(--purple);
-      margin-top: 30px;
-      margin-bottom: 10px;
-      font-size: 18px;
-    }
+header p {
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 5px;
+}
 
-    p {
-      line-height: 1.7;
-      font-size: 14.5px;
-      color: var(--text);
-    }
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
 
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      font-size: 13px;
-      color: var(--muted);
-    }
+.btn {
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .3s ease;
+}
 
-    footer span {
-      color: var(--purple);
-    }
+.btn-primary {
+  background: linear-gradient(135deg, var(--purple), var(--purple-dark));
+  color: #000;
+  box-shadow: 0 0 20px rgba(139,92,246,0.5);
+}
 
-    @media (max-width: 600px) {
-      .container {
-        padding: 25px;
-      }
-    }
-  </style>
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px rgba(139,92,246,0.8);
+}
+
+.btn-secondary {
+  border: 1px solid var(--purple);
+  color: var(--purple);
+}
+
+.btn-secondary:hover {
+  background: var(--purple);
+  color: #000;
+}
+
+section p {
+  font-size: 14.5px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+section p b {
+  color: var(--purple);
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+footer span {
+  color: var(--purple);
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 30px;
+  }
+  header h1 {
+    font-size: 28px;
+  }
+}
+</style>
 </head>
 <body>
 
-  <div class="container">
-    <h1>Termos de Serviço</h1>
-    <div class="subtitle">Bot 190 PECADOS • Última atualização: 2026</div>
+<div class="container">
 
-    <h2>1. Aceitação dos Termos</h2>
-    <p>Ao utilizar o bot 190 PECADOS, o usuário concorda integralmente com estes Termos de Serviço.</p>
+<header>
+  <h1>190 PECADOS</h1>
+  <p>Termos de Serviço • Última atualização: 2026</p>
+</header>
 
-    <h2>2. Finalidade</h2>
-    <p>O bot tem como objetivo fornecer funcionalidades automatizadas dentro da plataforma Discord.</p>
+<div class="actions">
+  <a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1467217348116086867" target="_blank">
+    ➕ Adicionar o Bot
+  </a>
+  <a class="btn btn-secondary" href="privacy.html">
+    🔒 Política de Privacidade
+  </a>
+</div>
 
-    <h2>3. Uso Responsável</h2>
-    <p>O usuário compromete-se a utilizar o bot de forma ética, legal e responsável.</p>
+<section>
+  <p><b>1.</b> Ao utilizar o bot 190 PECADOS, o usuário concorda com estes Termos de Serviço.</p>
+  <p><b>2.</b> O bot é destinado exclusivamente à plataforma Discord.</p>
+  <p><b>3.</b> O uso deve respeitar todas as leis aplicáveis.</p>
+  <p><b>4.</b> É proibido o uso para spam ou atividades maliciosas.</p>
+  <p><b>5.</b> O usuário deve cumprir as Diretrizes do Discord.</p>
+  <p><b>6.</b> O bot pode armazenar dados mínimos necessários ao funcionamento.</p>
+  <p><b>7.</b> Nenhum dado sensível é coletado.</p>
+  <p><b>8.</b> O bot não se responsabiliza por conteúdos enviados pelos usuários.</p>
+  <p><b>9.</b> Funcionalidades podem ser alteradas sem aviso.</p>
+  <p><b>10.</b> O bot pode ficar offline temporariamente.</p>
 
-    <h2>4. Uso Indevido</h2>
-    <p>É proibido utilizar o bot para spam, ataques, abuso de sistemas ou qualquer atividade maliciosa.</p>
+  <p><b>11.</b> O desenvolvedor não garante funcionamento contínuo.</p>
+  <p><b>12.</b> O acesso pode ser suspenso em caso de abuso.</p>
+  <p><b>13.</b> O serviço pode ser encerrado a qualquer momento.</p>
+  <p><b>14.</b> O bot é fornecido “como está”.</p>
+  <p><b>15.</b> O usuário é responsável por todas as ações realizadas.</p>
 
-    <h2>5. Conformidade com o Discord</h2>
-    <p>O uso do bot deve seguir rigorosamente os Termos e Diretrizes do Discord.</p>
+  <p><b>16.</b> É proibida engenharia reversa.</p>
+  <p><b>17.</b> Logs técnicos podem ser coletados.</p>
+  <p><b>18.</b> Logs não são usados para vigilância.</p>
+  <p><b>19.</b> O usuário deve possuir idade mínima exigida pelo Discord.</p>
+  <p><b>20.</b> O uso contínuo implica aceitação das alterações.</p>
 
-    <h2>6. Conteúdo</h2>
-    <p>O bot não se responsabiliza por conteúdos enviados ou solicitados pelos usuários.</p>
+  <p><b>21.</b> O bot não oferece suporte garantido.</p>
+  <p><b>22.</b> Funcionalidades podem ser limitadas.</p>
+  <p><b>23.</b> Dados podem ser removidos mediante solicitação.</p>
+  <p><b>24.</b> O desenvolvedor não se responsabiliza por danos indiretos.</p>
+  <p><b>25.</b> O uso do bot é opcional.</p>
 
-    <h2>7. Coleta de Dados</h2>
-    <p>São coletados apenas dados mínimos necessários para o funcionamento do bot.</p>
+  <p><b>26.</b> Alterações entram em vigor após publicação.</p>
+  <p><b>27.</b> O bot pode ser descontinuado.</p>
+  <p><b>28.</b> Nenhuma garantia comercial é oferecida.</p>
+  <p><b>29.</b> O usuário deve revisar os termos periodicamente.</p>
+  <p><b>30.</b> Dúvidas devem ser tratadas nos canais oficiais.</p>
+</section>
 
-    <h2>8. Armazenamento</h2>
-    <p>Os dados são armazenados de forma segura e podem ser removidos a qualquer momento.</p>
+<footer>
+  © 2026 <span>190 PECADOS</span> • Todos os direitos reservados
+</footer>
 
-    <h2>9. Segurança</h2>
-    <p>Embora medidas sejam tomadas, não há garantia de funcionamento ininterrupto ou livre de falhas.</p>
-
-    <h2>10. Disponibilidade</h2>
-    <p>O bot pode ficar offline por manutenção ou decisão do desenvolvedor.</p>
-
-    <h2>11. Alterações</h2>
-    <p>Funcionalidades podem ser alteradas ou removidas sem aviso prévio.</p>
-
-    <h2>12. Responsabilidade</h2>
-    <p>O desenvolvedor não se responsabiliza por danos causados pelo uso do bot.</p>
-
-    <h2>13. Suspensão</h2>
-    <p>O acesso ao bot pode ser suspenso em servidores que violem estes termos.</p>
-
-    <h2>14. Encerramento</h2>
-    <p>O serviço pode ser encerrado permanentemente sem aviso prévio.</p>
-
-    <h2>15. Idade Mínima</h2>
-    <p>O usuário deve atender à idade mínima exigida pelo Discord.</p>
-
-    <h2>16. Engenharia Reversa</h2>
-    <p>É proibido tentar copiar, modificar ou redistribuir o bot sem autorização.</p>
-
-    <h2>17. Atualizações</h2>
-    <p>Os termos podem ser atualizados a qualquer momento.</p>
-
-    <h2>18. Responsabilidade do Usuário</h2>
-    <p>O usuário é responsável por todas as ações realizadas com o bot.</p>
-
-    <h2>19. Isenção de Garantias</h2>
-    <p>O bot é fornecido “como está”, sem garantias explícitas.</p>
-
-    <h2>20. Contato</h2>
-    <p>Dúvidas devem ser tratadas pelos canais oficiais do bot.</p>
-
-    <footer>
-      © 2026 <span>190 PECADOS</span> • Todos os direitos reservados
-    </footer>
-  </div>
+</div>
 
 </body>
-  </html>
+</html>
